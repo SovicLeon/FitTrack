@@ -1,0 +1,534 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: #FEFFFF;
+    padding-top: 60px;
+    font-size: 20px;
+}
+
+nav{
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: top 0.3s;
+    background-color: #3AAFA9;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24);
+    box-sizing: border-box;
+}
+
+nav a{
+    float: left;
+    display: inline-block;
+    overflow: hidden;
+    color: #FEFFFF;
+    text-align: center;
+    padding: 11px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 1s;
+}
+
+#status{
+    overflow: hidden;
+    float: right;
+}
+
+nav a:hover {
+    color: #b6faf6;
+    transition: color 0.3s;
+}
+
+#myLinks{
+    flex-direction: row;
+}
+
+nav a.icon {
+    display: none;
+    right: 0;
+    top: 0;
+}
+
+nav a.home{
+    font-size: 25px;
+}
+
+#intro {
+    display: inline-block;
+    width: 95%;
+    text-align: center;
+    padding: 2% 2% 3%;
+    color: #17252A;
+    font-size: 25px;
+}
+
+#intro p{
+    padding: 0% 25%;
+    width: 50%;
+}
+
+#paneli {
+    display: inline-block;
+    width: 95%;
+    text-align: center;
+    padding: 2% 2% 3%;
+    color: #FEFFFF;
+}
+
+#paneli h2 {
+    color: #17252A !important;
+    padding: 1%;
+}
+
+.grid {
+    display: grid;
+    justify-content: justify;
+    grid-gap: 20px;
+    grid-template-columns: 50% 50%;
+    padding: 0 3%;
+}
+
+.panel {
+    text-align: justify;
+    background-color: #3AAFA9;
+    padding: 20px;
+    font-size: 25px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24), 0 8px 10px 0 rgba(0,0,0,0.19);
+}
+
+.panel a {
+    color: #FEFFFF;
+    border: solid 2px #FEFFFF;
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    background-color: #2B7A78;
+    border-radius: 10px;
+    margin: 5px 0;
+    transition: box-shadow 0.5s ease-in-out;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+.panel a:hover {
+    background-color: #6ab8b5;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
+    transition: box-shadow 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+
+.panel h3 {
+    padding: 10px;
+}
+
+.panel p {
+    padding: 5px;
+}
+
+.panel img {
+    padding: 5px;
+}
+
+#slika img {
+    max-width: 100%;
+    height: 50%;
+}
+
+#tekst {
+    display: inline-block;
+    width: 95%;
+    text-align: center;
+    padding: 2% 2% 3%;
+    color: #17252A;
+}
+
+#tekst p {
+    text-align: justify;
+    padding: 0 3%;
+}
+
+#tekst2 {
+    display: inline-block;
+    width: 95%;
+    text-align: center;
+    padding: 2% 2% 3%;
+    color: #17252A;
+}
+
+#tekst2 p {
+    padding: 0 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.login {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    padding: 2% 2% 3%;
+    margin: 5%;
+    color: #FEFFFF;
+    background-color: #3AAFA9;
+    font-size: 130%;
+    box-sizing: border-box;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24), 0 8px 10px 0 rgba(0,0,0,0.19);
+}
+
+.login form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login input{
+    font-size: 100%;
+    color: #225f5d;
+    border: solid 2px #FEFFFF;
+    display: inline-block;
+    text-align: center;
+    background-color: #92e2de;
+    border-radius: 10px;
+    width: 50%;
+    margin: 2%;
+}
+
+.login input[type=submit], .login input[type=reset]{
+    color: #17252A;
+    margin: 1%;
+    width: 30%;
+    transition: box-shadow 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+
+.login form input[type=submit]:hover, .login input[type=reset]:hover{
+    background-color: #6ab8b5;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.manjse{
+    font-size: 90%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2B7A78;
+    color: #FEFFFF;
+    width: 100%;
+    font-size: 18px;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#seznam {
+    padding: 1%;
+    width: 60%;
+    margin: 5%;
+    margin: auto;
+    text-align: center;
+    color: #FEFFFF;
+    font-size: 25px;
+    background-color: #3AAFA9;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24), 0 8px 10px 0 rgba(0,0,0,0.19);
+    gap: 10%;
+    min-height: 81vh;
+}
+
+#seznam a{
+    color: #FEFFFF;
+    border: solid 2px #FEFFFF;
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    background-color: #2B7A78;
+    border-radius: 10px;
+    margin: 1%;
+    transition: box-shadow 0.5s ease-in-out;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+#seznam a:hover {
+    background-color: #6ab8b5;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
+    transition: box-shadow 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+
+#seznam form {
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    padding: 1%;
+    background-color: #006b68;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1% 15%;
+}
+
+#seznam form input{
+    font-size: 100%;
+    color: #17252A;
+    border: solid 2px #FEFFFF;
+    display: inline-block;
+    text-align: center;
+    background-color: #92e2de;
+    border-radius: 10px;
+    width: 50%;
+    margin: 2%;
+}
+
+#seznam form select{
+    font-size: 100%;
+    color: #17252A;
+    border: solid 2px #FEFFFF;
+    display: inline-block;
+    text-align: center;
+    background-color: #92e2de;
+    border-radius: 10px;
+    width: 50%;
+    margin: 2%;
+}
+
+#seznam form input[type=submit]{
+    width: 30%;
+    font-size: 100%;
+    color: #17252A;
+    border: solid 2px #FEFFFF;
+    display: inline-block;
+    text-align: center;
+    background-color: #92e2de;
+    border-radius: 10px;
+    margin: 2%;
+}
+
+#seznam form input[type=submit]:hover{
+    background-color: #6ab8b5;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
+    transition: box-shadow 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+
+.vaja{
+    display: flex !important;
+    align-items: center;
+}
+
+.vaja span{
+    width: 20%;
+    margin: 1px;
+    border-radius: 10px;
+}
+
+.vaja input {
+    width: 20% !important;
+    margin: 1px !important;
+}
+
+.profilContainer {
+    font-size: 25px;
+    display: flex;
+    text-align: left;
+    padding: 1%;
+    background-color: #006b68;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1% 15%;
+    height: 5vh;
+    align-items: center;
+    justify-content: left;
+}
+
+.profilPodatek {
+    display: block;
+    width: 50%;
+    text-align: left;
+    padding: 1%;
+}
+
+.trening {
+    display: flex !important;
+    align-items: center;
+}
+
+.trening div {
+    display: inline-block;
+    width: 33%;
+}
+
+.trening input {
+    width: 100% !important;
+}
+
+.panel form {
+    padding: 1px;
+}
+
+.panel form input {
+    font-size: 20px;
+    color: #FEFFFF;
+    border: solid 2px #FEFFFF;
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    background-color: #2B7A78;
+    border-radius: 10px;
+    margin: 5px 0;
+    transition: box-shadow 0.5s ease-in-out;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+.panel form input:hover {
+    background-color: #6ab8b5;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
+    transition: box-shadow 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 670px) {
+    nav a.home{
+        display: inline;
+        float: left;
+    }
+
+    nav a.icon{
+        display: inline;
+        float: right;
+    }
+
+    #myLinks{
+        flex-direction: column;
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    #intro {
+        font-size: 20px;
+        padding: 3% 0%;
+        width: 100%;
+    }
+
+    #intro p {
+        padding: 0;
+        width: 100%;
+    }
+
+    #paneli {
+        font-size: 20px;
+        padding: 3% 0%;
+        width: 100%;
+    }
+
+    .grid {
+        grid-template-columns: auto;
+        padding: 10px;
+    }
+
+    .panel {
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .panel a {
+        width: 100%;
+    }
+
+    .panel form input {
+        width: 100%;
+    }
+
+    #tekst {
+        font-size: 20px;
+        padding: 3% 0%;
+        width: 100%;
+    }
+
+    #tekst p {
+        padding: 1% 5%;
+    }
+
+    #tekst2 {
+        font-size: 20px;
+        padding: 3% 0%;
+        width: 100%;
+    }
+
+    #slika img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .login{
+        width: 95%;
+        margin: 1vh;
+    }
+
+    .login input{
+        width: 85%;
+    }
+
+    .login input[type=submit], .login input[type=reset]{
+        width: 85%;
+    }
+
+    #seznam {
+        width: 95%;
+    }
+
+    #seznam form {
+        font-size: 19px;
+        margin: 2%;
+    }
+
+    #seznam a {
+        width: 50%;
+    }
+
+    #seznam form input {
+        width: 90% !important;
+    }
+
+    #seznam form span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #seznam form #odstraniVajo {
+        width: 20% !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .profilContainer {
+        margin: 2%;
+    }
+
+    .profilPodatek {
+        font-size: 19px;
+        overflow: hidden;
+    }
+}

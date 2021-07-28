@@ -1,0 +1,7 @@
+INSERT INTO nazivvaje VALUES (3,2,'priteg za glavo')
+
+INSERT INTO nazivvaje VALUES (4,5,'potisk nad glavo')
+
+INSERT INTO nazivvaje VALUES (5,4,'trebušnjak')
+
+INSERT INTO nazivvaje VALUES (6,3,'sklec')
