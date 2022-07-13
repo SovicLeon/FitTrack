@@ -1,5 +1,3 @@
 # FitTrack
----
-Fitness tracking app
-___
+## Fitness tracking app
 https://leonsovictestsite.000webhostapp.com/
